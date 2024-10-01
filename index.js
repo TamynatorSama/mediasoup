@@ -158,7 +158,7 @@ peer.on('connection', async (socket) => {
        
 
         // from the consumer extract the following params
-        // to send back to the Client
+        
         const params = {
           id: consumer.id,
           producerId: producer.id,
