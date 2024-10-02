@@ -21,7 +21,7 @@ app.get("/test", (req, res) => {
 const options = {};
 
 const httpServer = http.createServer(options, app);
-httpServer.listen(3000, () => {
+httpServer.listen(process.env.PORT || 4000, () => {
   console.log("listening on port 3000");
 });
 const io = new Server(httpServer);
