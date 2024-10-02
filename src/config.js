@@ -14,6 +14,7 @@ const getLocalIp = () => {
       return
     }
   })
+  console.log(localIp)
   return localIp
 }
 
